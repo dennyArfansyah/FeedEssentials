@@ -2,28 +2,11 @@
 //  RemoteFeedLoaderTests.swift
 //  FeedEssentials
 //
-//  Created by Denny  Arfansyah  on 15/08/2025.
+//  Created by Denny Arfansyah on 15/08/2025.
 //
 
 import XCTest
-
-class RemoteFeedLoader {
-    let url: URL
-    let client: HTTPClient
-    
-    init(url: URL, client: HTTPClient) {
-        self.url = url
-        self.client = client
-    }
-    
-    func load() {
-        client.get(from: url)
-    }
-}
-
-protocol HTTPClient {
-    func get(from url: URL)
-}
+import FeedEssentials
 
 class RemoteFeedLoaderTests: XCTestCase {
     
